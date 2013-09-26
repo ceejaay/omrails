@@ -9,11 +9,13 @@
 
 <body>
 
-	<%= render 'layouts/header' %>
-	<div class="container">
-	  <%= yield %>
-	  <%= render 'layouts/footer' %>
-	</div>
+    <div class="container">
+  <%= render 'layouts/header' %>
+      <%= yield %>
+     <!-- just a test button -->
+     <%= link_to "Go to Twitter", "http://twitter.com", class: "btn btn-large btn-danger" %>
+  <%= render 'layouts/footer' %>
+    </div>
 
 </body>
 </html>
