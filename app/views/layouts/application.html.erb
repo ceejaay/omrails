@@ -8,12 +8,14 @@
 </head>
 
 <body>
-
-    <div class="container">
   <%= render 'layouts/header' %>
+    <div class="container">
+    <% flash.each do |name, msg| %>
+     <%= content_tag(:div, msg, class: "alert alert-#{name}") 
+    <% end %>
+  
+      
       <%= yield %>
-     <!-- just a test button -->
-     <%= link_to "Go to Twitter", "http://twitter.com", class: "btn btn-large btn-danger" %>
   <%= render 'layouts/footer' %>
     </div>
 
