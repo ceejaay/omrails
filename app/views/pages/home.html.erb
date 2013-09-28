@@ -1,5 +1,10 @@
 <h1>One month rails project</h1>
 
+<% if user_signed_in? %>
+
+<p>Welcome back to my OMR project</p>
+<p>Follow me on <%= link_to "Twitter", "http://twitter.com/chad_jemmett" %>
+<% else %>
 <p>
 
 You've found my home page for my <%= link_to "One Month Rails", "http://onemonthrails.com" %> project.
@@ -9,3 +14,4 @@ You've found my home page for my <%= link_to "One Month Rails", "http://onemonth
 <p>
 
 <%= link_to "Sign up now", new_user_registration_path, class: "btn btn-large btn-primary" %>
+<% end %>
