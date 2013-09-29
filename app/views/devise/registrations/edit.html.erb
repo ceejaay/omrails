@@ -6,6 +6,7 @@
   <%= f.input :email %>
   <%= f.input :password, label: "New password", autocomplete: "off" %> 
   <%= f.input :password_confirmation  %>
+  <%= f.input :current_password %>
 
   <div class="form-action"><%= f.submit "Update", class: "btn btn-primary" %></div>
 <% end %>
