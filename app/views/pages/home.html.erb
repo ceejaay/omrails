@@ -2,8 +2,10 @@
 
 <% if user_signed_in? %>
 
-<p>Welcome back to my OMR project</p>
-<p>Follow me on <%= link_to "Twitter", "http://twitter.com/chad_jemmett" %>
+<p>Welcome back <%= current_user.name %> to my OMR project</p>
+<p>Your user ID is <%= current_user.id %>! </p>
+<p>Follow me on <%= link_to "Twitter", "http://twitter.com/chad_jemmett" %></br>
+<%= link_to "Create a new pin", new_pin_path %>
 <% else %>
 <p>
 
