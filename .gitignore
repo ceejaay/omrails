@@ -16,3 +16,5 @@
 /doc
 .DS_Store
 .gitignore
+/public/system
+#ignore paperclip uploaded files.
