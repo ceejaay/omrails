@@ -4,3 +4,10 @@
   This is all about me! This is where I blather on about how I'm learning rails.
   Actually, I do that on <%= link_to "Twitter", "https://twitter.com/chad_jemmett" %>. So follow me!
 </p>
+
+<p>
+  Here's some of our users:
+</p>
+<% @user.each do |user| %>
+<%= user.name %></br>
+<% end %>
