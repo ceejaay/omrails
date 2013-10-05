@@ -18,3 +18,4 @@
 .gitignore
 /public/system
 #ignore paperclip uploaded files.
+/sample_images
